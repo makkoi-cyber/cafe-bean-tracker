@@ -5,6 +5,7 @@ export const chains: Chain[] = [
         id: 'starbucks',
         name: 'Starbucks',
         logoColor: '#00704A',
+        logoUrl: '/assets/logos/starbucks.svg',
         beans: [
             {
                 id: 'sb-house',
@@ -13,7 +14,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Latin America', 'Balanced', 'Cocoa', 'Nut'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-house.jpg'
+                imageUrl: '/assets/beans/sb-house.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 3 },
             },
             {
                 id: 'sb-pike',
@@ -22,7 +24,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Latin America', 'Smooth', 'Chocolate', 'Nut'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-pike.jpg'
+                imageUrl: '/assets/beans/sb-pike.jpg',
+                flavor: { acidity: 3, bitterness: 2, body: 3 },
             },
             {
                 id: 'sb-verona',
@@ -31,7 +34,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Multi-Region', 'Rich', 'Dark Cocoa', 'Spicy'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-verona.jpg'
+                imageUrl: '/assets/beans/sb-verona.jpg',
+                flavor: { acidity: 2, bitterness: 4, body: 5 },
             },
             {
                 id: 'sb-espresso',
@@ -40,7 +44,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Multi-Region', 'Intense', 'Caramel'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-espresso.jpg'
+                imageUrl: '/assets/beans/sb-espresso.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 5 },
             },
             {
                 id: 'sb-sumatra',
@@ -49,7 +54,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Asia/Pacific', 'Earthy', 'Herbal'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-sumatra.jpg'
+                imageUrl: '/assets/beans/sb-sumatra.jpg',
+                flavor: { acidity: 1, bitterness: 4, body: 5 },
             },
             {
                 id: 'sb-tokyo',
@@ -58,7 +64,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Multi-Region', 'Hearty'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-tokyo.jpg'
+                imageUrl: '/assets/beans/sb-tokyo.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 4 },
             },
             {
                 id: 'sb-breakfast',
@@ -67,7 +74,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Light',
                 tags: ['Latin America', 'Bright', 'Tangy'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-breakfast.jpg'
+                imageUrl: '/assets/beans/sb-breakfast.jpg',
+                flavor: { acidity: 4, bitterness: 2, body: 2 },
             },
             {
                 id: 'sb-guatemala',
@@ -76,7 +84,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Latin America', 'Cocoa', 'Soft Spice'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-guatemala.jpg'
+                imageUrl: '/assets/beans/sb-guatemala.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 3 },
             },
             {
                 id: 'sb-ethiopia',
@@ -85,7 +94,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Africa', 'Citrus', 'Dark Cocoa', 'Floral'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-ethiopia.jpg'
+                imageUrl: '/assets/beans/sb-ethiopia.jpg',
+                flavor: { acidity: 5, bitterness: 2, body: 3 },
             },
             {
                 id: 'sb-colombia',
@@ -94,7 +104,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Latin America', 'Nutty', 'Herbal'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-colombia.jpg'
+                imageUrl: '/assets/beans/sb-colombia.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 4 },
             },
             {
                 id: 'sb-italian',
@@ -103,7 +114,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Multi-Region', 'Bold', 'Roasty'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-italian.jpg'
+                imageUrl: '/assets/beans/sb-italian.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 4 },
             },
             {
                 id: 'sb-french',
@@ -112,7 +124,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Multi-Region', 'Smoky', 'Intense'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-french.jpg'
+                imageUrl: '/assets/beans/sb-french.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 5 },
             },
             {
                 id: 'sb-decaf',
@@ -121,7 +134,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Decaf', 'Balanced'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-decaf.jpg'
+                imageUrl: '/assets/beans/sb-decaf.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 3 },
             },
             {
                 id: 'sb-lightnote',
@@ -130,7 +144,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Light',
                 tags: ['Latin America', 'Mellow', 'Chocolate'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-lightnote.jpg'
+                imageUrl: '/assets/beans/sb-lightnote.jpg',
+                flavor: { acidity: 3, bitterness: 1, body: 2 },
             },
             {
                 id: 'sb-kenya',
@@ -139,7 +154,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Africa', 'Berry', 'Spicy', 'Floral'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-kenya.jpg'
+                imageUrl: '/assets/beans/sb-kenya.jpg',
+                flavor: { acidity: 5, bitterness: 3, body: 4 },
             },
             {
                 id: 'sb-komodo',
@@ -148,7 +164,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Asia/Pacific', 'Herbal', 'Spicy'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-komodo.jpg'
+                imageUrl: '/assets/beans/sb-komodo.jpg',
+                flavor: { acidity: 2, bitterness: 4, body: 5 },
             },
             {
                 id: 'sb-siren',
@@ -157,7 +174,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Multi-Region', 'Balanced'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-siren.jpg'
+                imageUrl: '/assets/beans/sb-siren.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 3 },
             },
             {
                 id: 'sb-iced',
@@ -166,7 +184,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Multi-Region', 'Fruity', 'Citrus', 'Iced'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-iced.jpg'
+                imageUrl: '/assets/beans/sb-iced.jpg',
+                flavor: { acidity: 4, bitterness: 3, body: 3 },
             },
             {
                 id: 'sb-spring',
@@ -175,7 +194,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Seasonal', 'Floral', 'Bright'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-spring.jpg'
+                imageUrl: '/assets/beans/sb-spring.jpg',
+                flavor: { acidity: 4, bitterness: 2, body: 3 },
             },
             {
                 id: 'sb-christmas',
@@ -184,7 +204,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Seasonal', 'Spicy', 'Sweet'],
                 weight: '250g',
-                imageUrl: '/assets/beans/sb-christmas.jpg'
+                imageUrl: '/assets/beans/sb-christmas.jpg',
+                flavor: { acidity: 2, bitterness: 3, body: 4 },
             }
         ]
     },
@@ -192,6 +213,7 @@ export const chains: Chain[] = [
         id: 'tullys',
         name: "Tully's Coffee",
         logoColor: '#A12239',
+        logoUrl: '/assets/logos/tullys.svg',
         beans: [
             {
                 id: 'tc-house',
@@ -200,7 +222,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Balanced', 'Signature'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-house.jpg'
+                imageUrl: '/assets/beans/tc-house.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 3 },
             },
             {
                 id: 'tc-french',
@@ -209,7 +232,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Smoky', 'Intense', 'Milk Friendly'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-french.jpg'
+                imageUrl: '/assets/beans/tc-french.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 5 },
             },
             {
                 id: 'tc-mocha-java',
@@ -218,7 +242,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Exotic', 'Fragrant', 'Ethiopia', 'Indonesia'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-mocha-java.jpg'
+                imageUrl: '/assets/beans/tc-mocha-java.jpg',
+                flavor: { acidity: 4, bitterness: 3, body: 4 },
             },
             {
                 id: 'tc-piccolo',
@@ -227,7 +252,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Light',
                 tags: ['Mild', 'Sweet', 'Light'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-piccolo.jpg'
+                imageUrl: '/assets/beans/tc-piccolo.jpg',
+                flavor: { acidity: 4, bitterness: 1, body: 2 },
             },
             {
                 id: 'tc-black-three',
@@ -236,7 +262,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Heavy Body', 'Black Coffee'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-black-three.jpg'
+                imageUrl: '/assets/beans/tc-black-three.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 5 },
             },
             {
                 id: 'tc-kilimanjaro',
@@ -245,7 +272,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Africa', 'Acidity', 'Tanzania'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-kilimanjaro.jpg'
+                imageUrl: '/assets/beans/tc-kilimanjaro.jpg',
+                flavor: { acidity: 5, bitterness: 2, body: 3 },
             },
             {
                 id: 'tc-mandheling',
@@ -254,7 +282,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Asia/Pacific', 'Earthy', 'Full Body'],
                 weight: '150g',
-                imageUrl: '/assets/beans/tc-mandheling.jpg'
+                imageUrl: '/assets/beans/tc-mandheling.jpg',
+                flavor: { acidity: 2, bitterness: 4, body: 5 },
             },
             {
                 id: 'tc-ethiopia',
@@ -263,7 +292,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Africa', 'Fruity', 'Floral'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-ethiopia.jpg'
+                imageUrl: '/assets/beans/tc-ethiopia.jpg',
+                flavor: { acidity: 5, bitterness: 2, body: 2 },
             },
             {
                 id: 'tc-costarica',
@@ -272,7 +302,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Latin America', 'Sweet', 'Clean'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-costarica.jpg'
+                imageUrl: '/assets/beans/tc-costarica.jpg',
+                flavor: { acidity: 4, bitterness: 2, body: 3 },
             },
             {
                 id: 'tc-brazil',
@@ -281,7 +312,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Latin America', 'Nutty', 'Chocolate'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-brazil.jpg'
+                imageUrl: '/assets/beans/tc-brazil.jpg',
+                flavor: { acidity: 2, bitterness: 3, body: 4 },
             },
             {
                 id: 'tc-decaf',
@@ -290,7 +322,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Decaf', 'Brazil'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-decaf.jpg'
+                imageUrl: '/assets/beans/tc-decaf.jpg',
+                flavor: { acidity: 2, bitterness: 3, body: 3 },
             },
             {
                 id: 'tc-espresso',
@@ -299,7 +332,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Espresso', 'Bold'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-espresso.jpg'
+                imageUrl: '/assets/beans/tc-espresso.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 4 },
             },
             {
                 id: 'tc-romance',
@@ -308,7 +342,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Seasonal', 'Chocolate', 'Sweet'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-romance.jpg'
+                imageUrl: '/assets/beans/tc-romance.jpg',
+                flavor: { acidity: 2, bitterness: 4, body: 4 },
             },
             {
                 id: 'tc-guatemala',
@@ -317,7 +352,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Latin America', 'Award', 'Complex'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-guatemala.jpg'
+                imageUrl: '/assets/beans/tc-guatemala.jpg',
+                flavor: { acidity: 4, bitterness: 2, body: 4 },
             },
             {
                 id: 'tc-oleMonare',
@@ -326,7 +362,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Milk Friendly', 'Café Ole'],
                 weight: '200g',
-                imageUrl: '/assets/beans/tc-oleMonare.jpg'
+                imageUrl: '/assets/beans/tc-oleMonare.jpg',
+                flavor: { acidity: 1, bitterness: 4, body: 5 },
             }
         ]
     },
@@ -334,6 +371,7 @@ export const chains: Chain[] = [
         id: 'kaldi',
         name: 'Kaldi Coffee Farm',
         logoColor: '#F48E2F',
+        logoUrl: '/assets/logos/kaldi.jpg',
         beans: [
             {
                 id: 'k-mild',
@@ -342,7 +380,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Brazil', 'Colombia', 'Popular', 'No.1'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-mild.jpg'
+                imageUrl: '/assets/beans/k-mild.jpg',
+                flavor: { acidity: 3, bitterness: 2, body: 3 },
             },
             {
                 id: 'k-rich',
@@ -351,7 +390,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Bitter', 'Rich', 'Milk Friendly'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-rich.jpg'
+                imageUrl: '/assets/beans/k-rich.jpg',
+                flavor: { acidity: 2, bitterness: 5, body: 5 },
             },
             {
                 id: 'k-special',
@@ -360,7 +400,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Balanced', 'Signature'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-special.jpg'
+                imageUrl: '/assets/beans/k-special.jpg',
+                flavor: { acidity: 2, bitterness: 4, body: 4 },
             },
             {
                 id: 'k-italian',
@@ -369,7 +410,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Espresso', 'Bitter'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-italian.jpg'
+                imageUrl: '/assets/beans/k-italian.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 5 },
             },
             {
                 id: 'k-mocha-blend',
@@ -378,7 +420,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Aromatic', 'Ethiopia', 'Winey'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-mocha-blend.jpg'
+                imageUrl: '/assets/beans/k-mocha-blend.jpg',
+                flavor: { acidity: 4, bitterness: 2, body: 3 },
             },
             {
                 id: 'k-blue-mtn',
@@ -387,7 +430,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Premium', 'Jamaica', 'Elegant'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-blue-mtn.jpg'
+                imageUrl: '/assets/beans/k-blue-mtn.jpg',
+                flavor: { acidity: 3, bitterness: 2, body: 3 },
             },
             {
                 id: 'k-mandheling',
@@ -396,7 +440,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Indonesia', 'Wild', 'Earthy'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-mandheling.jpg'
+                imageUrl: '/assets/beans/k-mandheling.jpg',
+                flavor: { acidity: 2, bitterness: 4, body: 5 },
             },
             {
                 id: 'k-canario',
@@ -405,7 +450,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Light',
                 tags: ['Brazil', 'Rare', 'Citrus', 'Sweet'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-canario.jpg'
+                imageUrl: '/assets/beans/k-canario.jpg',
+                flavor: { acidity: 4, bitterness: 1, body: 2 },
             },
             {
                 id: 'k-kilimanjaro',
@@ -414,7 +460,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Africa', 'Floral', 'Bright'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-kilimanjaro.jpg'
+                imageUrl: '/assets/beans/k-kilimanjaro.jpg',
+                flavor: { acidity: 5, bitterness: 2, body: 3 },
             },
             {
                 id: 'k-guatemala',
@@ -423,7 +470,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Latin America', 'Chocolate', 'Nutty'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-guatemala.jpg'
+                imageUrl: '/assets/beans/k-guatemala.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 4 },
             },
             {
                 id: 'k-french',
@@ -432,7 +480,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Smoky', 'Bold'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-french.jpg'
+                imageUrl: '/assets/beans/k-french.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 5 },
             },
             {
                 id: 'k-noel',
@@ -441,7 +490,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Seasonal', 'Winter', 'Rich'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-noel.jpg'
+                imageUrl: '/assets/beans/k-noel.jpg',
+                flavor: { acidity: 2, bitterness: 4, body: 4 },
             },
             {
                 id: 'k-mocha-matari',
@@ -450,7 +500,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Premium', 'Yemen', 'Fruity'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-mocha-matari.jpg'
+                imageUrl: '/assets/beans/k-mocha-matari.jpg',
+                flavor: { acidity: 5, bitterness: 2, body: 3 },
             },
             {
                 id: 'k-blue-no1',
@@ -459,7 +510,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Premium', 'Jamaica', 'No.1'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-blue-no1.jpg'
+                imageUrl: '/assets/beans/k-blue-no1.jpg',
+                flavor: { acidity: 3, bitterness: 2, body: 3 },
             },
             {
                 id: 'k-panama-geisha',
@@ -468,7 +520,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Light',
                 tags: ['Ultra Premium', 'Rare', 'Floral'],
                 weight: '100g',
-                imageUrl: '/assets/beans/k-panama-geisha.jpg'
+                imageUrl: '/assets/beans/k-panama-geisha.jpg',
+                flavor: { acidity: 5, bitterness: 1, body: 2 },
             },
             {
                 id: 'k-morning',
@@ -477,7 +530,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Morning', 'Sharp'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-morning.jpg'
+                imageUrl: '/assets/beans/k-morning.jpg',
+                flavor: { acidity: 3, bitterness: 4, body: 3 },
             },
             {
                 id: 'k-cafeole',
@@ -486,7 +540,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Milk Friendly', 'Café Ole'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-cafeole.jpg'
+                imageUrl: '/assets/beans/k-cafeole.jpg',
+                flavor: { acidity: 1, bitterness: 4, body: 5 },
             },
             {
                 id: 'k-espresso',
@@ -495,7 +550,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Espresso', 'Body'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-espresso.jpg'
+                imageUrl: '/assets/beans/k-espresso.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 5 },
             },
             {
                 id: 'k-mocha-french',
@@ -504,7 +560,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Ethiopia', 'Floral', 'Bitter'],
                 weight: '200g',
-                imageUrl: '/assets/beans/k-mocha-french.jpg'
+                imageUrl: '/assets/beans/k-mocha-french.jpg',
+                flavor: { acidity: 3, bitterness: 5, body: 4 },
             }
         ]
     },
@@ -512,6 +569,7 @@ export const chains: Chain[] = [
         id: 'doutor',
         name: 'Doutor Coffee',
         logoColor: '#FFC800',
+        logoUrl: '/assets/logos/doutor.jpg',
         beans: [
             {
                 id: 'd-mild',
@@ -520,7 +578,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Standard', 'Balanced'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-mild.jpg'
+                imageUrl: '/assets/beans/d-mild.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 3 },
             },
             {
                 id: 'd-royal',
@@ -529,7 +588,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Elegant', 'Sweet', 'Clear'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-royal.jpg'
+                imageUrl: '/assets/beans/d-royal.jpg',
+                flavor: { acidity: 4, bitterness: 2, body: 3 },
             },
             {
                 id: 'd-golden',
@@ -538,7 +598,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Mocha', 'Aroma', 'Soft Acidity'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-golden.jpg'
+                imageUrl: '/assets/beans/d-golden.jpg',
+                flavor: { acidity: 4, bitterness: 3, body: 3 },
             },
             {
                 id: 'd-italian',
@@ -547,7 +608,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Espresso', 'Deep Bitter'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-italian.jpg'
+                imageUrl: '/assets/beans/d-italian.jpg',
+                flavor: { acidity: 1, bitterness: 5, body: 5 },
             },
             {
                 id: 'd-blue-no1',
@@ -556,7 +618,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Premium', 'King of Coffee'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-blue-no1.jpg'
+                imageUrl: '/assets/beans/d-blue-no1.jpg',
+                flavor: { acidity: 3, bitterness: 2, body: 3 },
             },
             {
                 id: 'd-blue-blend',
@@ -565,7 +628,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Premium', 'Clean'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-blue-blend.jpg'
+                imageUrl: '/assets/beans/d-blue-blend.jpg',
+                flavor: { acidity: 3, bitterness: 2, body: 3 },
             },
             {
                 id: 'd-mocha',
@@ -574,7 +638,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Ethiopia', 'Fruity', 'Winey'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-mocha.jpg'
+                imageUrl: '/assets/beans/d-mocha.jpg',
+                flavor: { acidity: 5, bitterness: 2, body: 3 },
             },
             {
                 id: 'd-mandheling',
@@ -583,7 +648,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['Indonesia', 'Earthy', 'Full Body'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-mandheling.jpg'
+                imageUrl: '/assets/beans/d-mandheling.jpg',
+                flavor: { acidity: 2, bitterness: 4, body: 5 },
             },
             {
                 id: 'd-kilimanjaro',
@@ -592,7 +658,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Africa', 'Bright', 'Clean'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-kilimanjaro.jpg'
+                imageUrl: '/assets/beans/d-kilimanjaro.jpg',
+                flavor: { acidity: 5, bitterness: 2, body: 3 },
             },
             {
                 id: 'd-guatemala',
@@ -601,7 +668,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Latin America', 'Chocolate', 'Nutty'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-guatemala.jpg'
+                imageUrl: '/assets/beans/d-guatemala.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 4 },
             },
             {
                 id: 'd-kenya',
@@ -610,7 +678,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Africa', 'Berry', 'Vibrant'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-kenya.jpg'
+                imageUrl: '/assets/beans/d-kenya.jpg',
+                flavor: { acidity: 5, bitterness: 2, body: 4 },
             },
             {
                 id: 'd-european',
@@ -619,7 +688,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Dark',
                 tags: ['European', 'Rich', 'Aromatic'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-european.jpg'
+                imageUrl: '/assets/beans/d-european.jpg',
+                flavor: { acidity: 2, bitterness: 4, body: 4 },
             },
             {
                 id: 'd-decaf',
@@ -628,7 +698,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Decaf', 'Anytime'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-decaf.jpg'
+                imageUrl: '/assets/beans/d-decaf.jpg',
+                flavor: { acidity: 2, bitterness: 2, body: 2 },
             },
             {
                 id: 'd-premium-mild',
@@ -637,7 +708,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Seasonal', 'Premium', 'Charcoal Roast'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-premium-mild.jpg'
+                imageUrl: '/assets/beans/d-premium-mild.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 4 },
             },
             {
                 id: 'd-dominican',
@@ -646,7 +718,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Limited', 'Rare', 'Berry'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-dominican.jpg'
+                imageUrl: '/assets/beans/d-dominican.jpg',
+                flavor: { acidity: 3, bitterness: 3, body: 3 },
             },
             {
                 id: 'd-hawaii-kona',
@@ -655,7 +728,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Premium', 'Hawaii', 'Own Farm'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-hawaii-kona.jpg'
+                imageUrl: '/assets/beans/d-hawaii-kona.jpg',
+                flavor: { acidity: 2, bitterness: 3, body: 4 },
             },
             {
                 id: 'd-hawaii-blend',
@@ -664,7 +738,8 @@ export const chains: Chain[] = [
                 roastLevel: 'Medium',
                 tags: ['Premium', 'Hawaii', 'Mellow'],
                 weight: '200g',
-                imageUrl: '/assets/beans/d-hawaii-blend.jpg'
+                imageUrl: '/assets/beans/d-hawaii-blend.jpg',
+                flavor: { acidity: 2, bitterness: 2, body: 3 },
             }
         ]
     }

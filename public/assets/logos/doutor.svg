@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 150">
+  <!-- Doutor Style Logo: Balanced blue and yellow -->
+  <rect width="400" height="150" fill="white"/>
+  <!-- Circle motif -->
+  <circle cx="60" cy="75" r="45" fill="#002B5B"/>
+  <circle cx="60" cy="75" r="30" fill="#FFC800"/>
+  <text x="240" y="95" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="70" fill="#002B5B" text-anchor="middle" letter-spacing="-2">DOUTOR</text>
+</svg>

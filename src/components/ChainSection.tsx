@@ -1,13 +1,29 @@
+import { useState } from 'react';
 import type { Chain } from '../types';
 import { BeanCard } from './BeanCard';
 
 interface ChainSectionProps {
     chain: Chain;
     purchasedSet: Set<string>;
+    purchases: Record<string, string[]>;
+    reviews: Record<string, { rating: number; note: string }>;
     onToggle: (id: string) => void;
+    onAddDate: (id: string, date: string) => void;
+    onRemoveDate: (id: string, date: string) => void;
+    onSetReview: (id: string, rating: number, note: string) => void;
 }
 
-export function ChainSection({ chain, purchasedSet, onToggle }: ChainSectionProps) {
+export function ChainSection({
+    chain,
+    purchasedSet,
+    purchases,
+    reviews,
+    onToggle,
+    onAddDate,
+    onRemoveDate,
+    onSetReview
+}: ChainSectionProps) {
+    const [logoError, setLogoError] = useState(false);
     const chainPurchasedCount = chain.beans.filter(b => purchasedSet.has(b.id)).length;
     const progress = Math.round((chainPurchasedCount / chain.beans.length) * 100);
 
@@ -16,14 +32,25 @@ export function ChainSection({ chain, purchasedSet, onToggle }: ChainSectionProp
             <div className="flex items-end justify-between mb-6">
                 <div className="flex items-center gap-3">
                     <div
-                        className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-sm"
+                        className="w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg overflow-hidden group/logo transition-transform hover:scale-110"
                         style={{ backgroundColor: chain.logoColor }}
                     >
-                        {chain.name.charAt(0)}
+                        {chain.logoUrl && !logoError ? (
+                            <img
+                                src={chain.logoUrl}
+                                alt={chain.name}
+                                className="w-full h-full object-cover"
+                                onError={() => setLogoError(true)}
+                            />
+                        ) : (
+                            <div className="flex flex-col items-center">
+                                <span className="transform group-hover/logo:scale-125 transition-transform">{chain.name.charAt(0)}</span>
+                            </div>
+                        )}
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold text-gray-900">{chain.name}</h2>
-                        <p className="text-sm text-gray-500">
+                        <h2 className="text-2xl font-bold text-coffee-dark dark:text-espresso-text">{chain.name}</h2>
+                        <p className="text-sm text-stone-500">
                             {chainPurchasedCount} / {chain.beans.length} collected
                         </p>
                     </div>
@@ -47,7 +74,12 @@ export function ChainSection({ chain, purchasedSet, onToggle }: ChainSectionProp
                         key={bean.id}
                         bean={bean}
                         isPurchased={purchasedSet.has(bean.id)}
+                        purchaseDates={purchases[bean.id] || []}
+                        review={reviews[bean.id]}
                         onToggle={onToggle}
+                        onAddDate={onAddDate}
+                        onRemoveDate={onRemoveDate}
+                        onSetReview={onSetReview}
                     />
                 ))}
             </div>
